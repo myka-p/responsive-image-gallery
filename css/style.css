@@ -1,19 +1,32 @@
 * {
-  box-sizing: border-box;
+  /* reset */
+  box-sizing: border-box; 
 }
 
 body {
-  background: #F0F0F0;
+  background: #f0f0f0;
+
+  /* reset */
   margin: 0;
 }
 
 main {
-  display: grid;
+  /* turns on the grid */
+  display: grid; 
+
+  /* 
+  defines the grid 
+  repeat - repeats the pattern
+  auto-fit - as will fit in the space available
+  minmax - browser makes min (200px), max (1fr) 
+  */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
 }
 
 img {
   display: block;
-  box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
   width: 100%;
+  box-shadow: -1px 0px 0px rgba(0,0,0,0.06);
 }
+
